@@ -8,19 +8,29 @@
 </head>
 <body>
     <h1>お問い合わせ</h1>
-    <form action="">
+    <!-- action --- 送信先URLの指定 -->
+    <!-- method送信方法　（GET or POST)  *デフォルトはゲット送信-->
+    <form action="check.php" method="POST">
         <div>
             <label for="name">名前</label> <br>
-            <input id="name" type="text">
+            <input id="name" type="text" name = "username">
         </div>
 
         <div>
             <label for="email">メールアドレス</label> <br>
-            <input id="email" type="text">
+            <input id="email" type="text" name = "email">
         </div>
 
-        <input type="submit" value="送信">
+        <div>
+            <label>お問い合わせ</label>
+            <textarea name="content" ></textarea>
+        </div>
 
+
+
+
+
+        <input type="submit" value="送信">
 
     </form>
     
